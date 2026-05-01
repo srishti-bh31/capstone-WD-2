@@ -1,1 +1,0 @@
-# capstone-WD-2
