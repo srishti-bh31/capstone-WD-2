@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 function DoctorCard({ doctor }) {
   return (
     <div className="card">
-      
-      {}
+
       <img
         src={doctor.img}
         alt="doctor"
@@ -18,6 +17,9 @@ function DoctorCard({ doctor }) {
 
       <h3>{doctor.name}</h3>
       <p style={{ color: "#94a3b8" }}>{doctor.specialization}</p>
+
+      {/* ⭐ Rating */}
+      <p style={{ color: "gold" }}>⭐ {doctor.rating}</p>
 
       <Link to={`/book/${doctor.id}`}>
         <button className="btn">Book</button>
