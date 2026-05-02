@@ -9,7 +9,8 @@ function Dashboard() {
   }, []);
 
   const handleCancel = (index) => {
-    const updated = appointments.filter((_, i) => i !== index);
+    const updated = [...appointments];
+    updated[index].status = "Cancelled";
     setAppointments(updated);
     localStorage.setItem("appointments", JSON.stringify(updated));
   };
@@ -18,17 +19,20 @@ function Dashboard() {
     <div className="container">
       <h2>Your Appointments</h2>
 
-      {appointments.length === 0 && <p>No appointments yet</p>}
-
       {appointments.map((appt, index) => (
         <div key={index} className="card">
           <p><b>Doctor ID:</b> {appt.doctorId}</p>
           <p><b>Date:</b> {appt.date}</p>
           <p><b>Time:</b> {appt.time}</p>
 
-          <button className="btn" onClick={() => handleCancel(index)}>
-            Cancel
-          </button>
+          {/* 📅 Status */}
+          <p><b>Status:</b> {appt.status}</p>
+
+          {appt.status === "Upcoming" && (
+            <button className="btn" onClick={() => handleCancel(index)}>
+              Cancel
+            </button>
+          )}
         </div>
       ))}
     </div>
