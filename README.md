@@ -65,7 +65,7 @@ This application allows users to browse doctors, book appointments, and manage t
 - 🏥 Doctor profile details page
 -📱 Fully responsive mobile UI
 
-- 🙌 Author 
+🙌 Author 
 
 - Srishti Bhardwaj
 (Frontend Developer 💻)
