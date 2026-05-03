@@ -1,66 +1,71 @@
 # 🏥 Healthcare Appointment System
 
-<p align="center">
-  <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="200"/>
-</p>
-
-A modern and responsive **Healthcare Appointment Booking App** built using React.  
-Users can browse doctors, book appointments, and manage them easily — all in a clean and aesthetic dark-themed UI.
+A modern and user-friendly Healthcare Appointment Booking Web App built using React.  
+This application allows users to browse doctors, book appointments, and manage them easily.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- 🔍 Search doctors by name  
-- 👨‍⚕️ Doctor listing with profile cards  
-- 📅 Book appointments (date & time)  
-- 📊 View all appointments in dashboard  
-- ❌ Cancel appointments  
-- 🌙 Aesthetic dark theme UI  
-- 💾 Data stored using localStorage  
+✨ Clean and modern dark UI  
+👩‍⚕️ View doctors with images, specialization & ratings  
+🔍 Search and filter doctors by specialization  
+📅 Book appointments with date & time slots  
+📊 Dashboard to manage appointments  
+🔐 Login & Signup authentication (local storage)  
+🔔 Toast notifications for better UX  
+❌ Cancel appointments with status update  
 
 ---
 
-## 🚀 Tech Stack
+## 🛠️ Tech Stack
 
-- ⚛️ React (Vite)  
-- 🔀 React Router  
-- 🎨 Custom CSS (Dark Theme)  
-- 💾 LocalStorage  
+- ⚛️ React (Vite)
+- 🎨 CSS (Custom styling)
+- 🔀 React Router DOM
+- 🔔 React Hot Toast
+- 💾 LocalStorage (for data handling)
 
 ---
 
 ## 📁 Project Structure
-src/
+-healthcare-app/
 │
-├── components/
-│ ├── Navbar.jsx
-│ └── DoctorCard.jsx
+├── public/
 │
-├── pages/
-│ ├── Home.jsx
-│ ├── Doctors.jsx
-│ ├── BookAppointment.jsx
-│ └── Dashboard.jsx
+├── src/
+│ ├── assets/
+│ │ └── images/
+│ │
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ └── DoctorCard.jsx
+│ │
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ ├── Doctors.jsx
+│ │ ├── BookAppointment.jsx
+│ │ ├── Dashboard.jsx
+│ │ ├── Login.jsx
+│ │ └── Signup.jsx
+│ │
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
 │
-├── App.jsx
-├── main.jsx
-└── index.css
+├── index.html
+├── package.json
+├── vite.config.js
+└── vercel.json
 
+-💡 Future Improvements
+-🔐 Proper backend authentication (JWT)
+-🗄️ Database integration (MongoDB / Firebase)
+-📧 Email notifications
+-🏥 Doctor profile details page
+-📱 Fully responsive mobile UI
 
-## 🛠️ Installation & Setup
+-🙌 Author -
 
-- git clone https://github.com/your-username/healthcare-app.git
-- cd healthcare-app
-- npm install
-- npm run dev
-
-🧠 What I Learned
-- React routing and navigation
-- Component-based architecture
-- State management using hooks
-- Working with localStorage
-- Building responsive UI
-
-🙌 Author
-- Made with ❤️ by Srishti
+Srishti
+(Frontend Developer 💻)
