@@ -58,14 +58,14 @@ This application allows users to browse doctors, book appointments, and manage t
 ├── vite.config.js
 └── vercel.json
 
--💡 Future Improvements
--🔐 Proper backend authentication (JWT)
--🗄️ Database integration (MongoDB / Firebase)
--📧 Email notifications
--🏥 Doctor profile details page
+- 💡 Future Improvements
+- 🔐 Proper backend authentication (JWT)
+- 🗄️ Database integration (MongoDB / Firebase)
+- 📧 Email notifications
+- 🏥 Doctor profile details page
 -📱 Fully responsive mobile UI
 
--🙌 Author -
+- 🙌 Author 
 
-Srishti
+- Srishti Bhardwaj
 (Frontend Developer 💻)
